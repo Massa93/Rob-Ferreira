@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hospital Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="login-link">Login</a></li>
+                <li><a href="#" id="dashboard-link">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="login-section" class="hidden">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <label for="role">Role:</label>
+                <select id="role" required>
+                    <option value="doctor">Doctor</option>
+                    <option value="nurse">Nurse</option>
+                    <option value="lab">Laboratory Staff</option>
+                    <option value="pharmacy">Pharmacist</option>
+                </select>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="dashboard-section" class="hidden">
+            <h2>Dashboard</h2>
+            <div id="user-info"></div>
+            <div id="patient-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hospital Management System</p>
+    </footer>
+
+    <script src="robjs.js"></script>
+</body>
+</html>
